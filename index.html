@@ -20,6 +20,12 @@ color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial
 .brandmark{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px}
 .check{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#5367ef,#3d77d9);display:grid;place-items:center;color:white;font-size:22px}
 .badge{background:#eef1ff;color:#4c50b9;padding:10px 16px;border-radius:22px;font-weight:800;font-size:12px}
+.header-wa{display:flex;align-items:center;gap:7px;color:#16834a;text-decoration:none;background:#eafaf0;border:1px solid #bcebcf;padding:8px 12px;border-radius:22px;font-weight:850;font-size:11px}
+.header-wa-icon{width:24px;height:24px;border-radius:50%;background:#25D366;color:white;display:grid;place-items:center;font-size:13px}
+.float-wa{position:fixed;right:14px;width:52px;height:52px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;text-decoration:none;font-size:24px;box-shadow:0 7px 22px #178c47aa;z-index:20;border:3px solid #fff}
+.float-wa.one{top:calc(50% - 58px)}.float-wa.two{top:calc(50% + 6px)}
+.number-indicator{display:inline-flex;align-items:center;gap:8px;margin:18px auto 0;padding:10px 16px;border-radius:30px;background:#effaf3;border:1px solid #bcebcf;color:#176c40;font-weight:850;font-size:12px;box-shadow:0 8px 20px #21bf6112}
+.number-indicator .mini-wa{width:23px;height:23px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;font-size:12px}
 .hero{padding:48px 0 25px;text-align:center}
 .kicker{display:inline-block;padding:9px 15px;border:1px solid #aee9ed;border-radius:24px;background:#efffff;color:#207987;font-weight:850;font-size:12px}
 h1{font-size:clamp(34px,9vw,53px);line-height:1.03;letter-spacing:-2.5px;margin:20px 0 14px}
@@ -41,14 +47,27 @@ box-shadow:0 20px 45px #8a9fd522;border:1px solid #e3e9f5}
 .timer{text-align:center;color:#788397;font-size:11px;margin-top:9px}.line{height:4px;background:#e3e8ef;border-radius:10px;margin-top:7px;overflow:hidden}.line i{display:block;height:100%;background:var(--green);animation:go 5s linear forwards}@keyframes go{to{width:0}}
 .contact{margin:15px 0 0;text-align:center;color:#5e687b;font-size:12px}.contact a{color:#187b4a;font-weight:850;text-decoration:none}
 .disclaimer{text-align:center;color:#8a94a5;font-size:10.5px;line-height:1.55;margin:16px auto;max-width:580px}
+
+.reviews{margin:10px 0 28px}
+.review-head{text-align:center;margin-bottom:16px}
+.review-head h2{font-size:26px;letter-spacing:-1px;margin:13px 0 6px}
+.review-head p{font-size:11px;color:#8a94a5;line-height:1.5;margin:0 auto;max-width:500px}
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.review{background:#fff;border:1px solid #e3e8f1;border-radius:18px;padding:17px;box-shadow:0 9px 24px #63789c10}
+.review .stars{color:#f3b52d;font-size:13px;letter-spacing:2px;margin-bottom:7px}
+.review b{font-size:13px;color:#253149}
+.review p{font-size:11.5px;line-height:1.55;color:#717c8e;margin:7px 0 0}
+
 footer{text-align:center;color:#8993a4;font-size:10px;padding:8px 0 30px}
-@media(max-width:480px){.top{height:66px}.badge{padding:9px 12px}.hero{padding-top:38px}.phone{width:185px;height:285px}}
+@media(max-width:480px){.top{height:66px}.header-wa{padding:7px 9px;font-size:9px}.header-wa-icon{width:22px;height:22px}.hero{padding-top:38px}.phone{width:185px;height:285px}.float-wa{width:48px;height:48px;right:8px}.float-wa.one{top:calc(50% - 54px)}.float-wa.two{top:calc(50% + 6px)}}
 </style>
 </head>
 <body>
 <header class="top">
  <div class="brandmark"><span class="check">✓</span> AX Marketing</div>
- <div class="badge">Project Program</div>
+ <a class="header-wa" href="https://wa.me/916377664823" target="_blank" rel="noopener">
+   <span class="header-wa-icon">☎</span> <span>+91 63776 64823</span>
+ </a>
 </header>
 
 <main class="wrap">
@@ -56,6 +75,9 @@ footer{text-align:center;color:#8993a4;font-size:10px;padding:8px 0 30px}
  <span class="kicker">Project-Based Tasks</span>
  <h1>Explore <span class="grad">simple projects</span><br>with guided support</h1>
  <p class="sub">Get access to task-based projects, clear instructions and project guidance. Review the details before you participate.</p>
+ <a class="number-indicator" href="https://wa.me/916377664823" target="_blank" rel="noopener">
+   <span class="mini-wa">☎</span> WhatsApp: +91 63776 64823
+ </a>
 
  <div class="visual">
   <div class="phone">
@@ -81,7 +103,23 @@ footer{text-align:center;color:#8993a4;font-size:10px;padding:8px 0 30px}
   <div class="step"><span class="num">4</span><div><b>Verification</b><p>Submitted tasks are subject to applicable verification requirements.</p></div></div>
  </div>
 
- <a class="cta" href="https://wa.me/qr/WIT34NJZ6RZON1" target="_blank" rel="noopener">
+ 
+<section class="reviews">
+  <div class="review-head">
+    <span class="kicker">Example Feedback</span>
+    <h2>What participants may value</h2>
+    <p>Illustrative examples for the page design — not verified customer testimonials.</p>
+  </div>
+  <div class="review-grid">
+    <article class="review"><div class="stars">★★★★★</div><b>Rahul S.</b><p>“Clear project instructions and easy-to-follow guidance. I liked being able to review the task details before starting.”</p></article>
+    <article class="review"><div class="stars">★★★★★</div><b>Priya M.</b><p>“The step-by-step process made the project workflow easier for me to understand from home.”</p></article>
+    <article class="review"><div class="stars">★★★★☆</div><b>Vikas K.</b><p>“Good support and straightforward task information. I could check the requirements before submitting.”</p></article>
+    <article class="review"><div class="stars">★★★★★</div><b>Neha R.</b><p>“I found the project instructions simple to understand and the communication process convenient.”</p></article>
+    <article class="review"><div class="stars">★★★★★</div><b>Amit P.</b><p>“Useful guidance for understanding how task-based projects work and what needs to be submitted.”</p></article>
+    <article class="review"><div class="stars">★★★★☆</div><b>Sunita J.</b><p>“The information was presented clearly, so I could review the project requirements before participating.”</p></article>
+  </div>
+</section>
+<a class="cta" href="https://wa.me/qr/WIT34NJZ6RZON1" target="_blank" rel="noopener">
    <span class="waicon">☎</span> Contact us — WhatsApp
  </a>
  <div class="timer" id="timer">Opening WhatsApp in 5 seconds — or tap above<div class="line"><i></i></div></div>
@@ -89,6 +127,8 @@ footer{text-align:center;color:#8993a4;font-size:10px;padding:8px 0 30px}
  <div class="disclaimer">Task availability and eligibility may vary. Submitted tasks are subject to verification and applicable project terms. Any reward, where applicable, is provided only after successful verification according to the relevant task terms. No fixed earnings are promised.</div>
 </section>
 </main>
+<a class="float-wa one" href="https://wa.me/916377664823" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
+<a class="float-wa two" href="https://wa.me/916377664823" target="_blank" rel="noopener" aria-label="WhatsApp">☎</a>
 <footer>Ads by AX Marketing</footer>
 
 <script>
