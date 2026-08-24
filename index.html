@@ -1,10 +1,103 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AX Marketing</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AX Marketing | Project Program</title>
+<meta name="description" content="AX Marketing project-based tasks, guidance and support.">
+<meta name="theme-color" content="#f5f8ff">
 <style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%}body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 10%,#17275a,#090e27 45%,#050817);color:#fff;font-family:Inter,system-ui,Arial,sans-serif}main{width:min(560px,92%);text-align:center}.logo{width:76px;height:76px;margin:0 auto 18px;border-radius:22px;display:grid;place-items:center;background:#101a3d;border:1px solid #395487;box-shadow:0 18px 45px #0008;font-size:27px;font-weight:950;color:#2cddff}.brand{font-size:32px;font-weight:950;letter-spacing:-1.5px;margin-bottom:24px}.brand span{background:linear-gradient(90deg,#27dcff,#8d6dff,#e95fcf);-webkit-background-clip:text;color:transparent}h1{font-size:clamp(30px,8vw,43px);line-height:1.15;letter-spacing:-1.5px;margin:0 0 25px}.highlight{background:linear-gradient(90deg,#29ddff,#9b71ff,#ec62d3);-webkit-background-clip:text;color:transparent}.whatsapp{display:block;padding:17px 20px;border-radius:999px;background:#25D366;color:#061b10;text-decoration:none;font-size:18px;font-weight:900;box-shadow:0 0 32px #25D36655}.wa-icon{display:inline-flex;width:24px;height:24px;vertical-align:-6px;margin-right:7px;border-radius:50%;align-items:center;justify-content:center;background:#fff;color:#25D366;font-size:15px;font-weight:1000}.timer{margin-top:13px;color:#aab5ce;font-size:13px}.bar{height:5px;margin-top:9px;background:#27314d;border-radius:99px;overflow:hidden}.bar i{display:block;width:100%;height:100%;background:#25D366;animation:go 5s linear forwards}@keyframes go{to{width:0}}.disclaimer{margin:20px 8px 0;color:#8995ad;font-size:11px;line-height:1.6}.ads{margin-top:16px;color:#7f8ba6;font-size:11px}.telegram{color:#35dca5;text-decoration:none}
-</style></head><body><main><div class="logo">AX↗</div><div class="brand">AX <span>Marketing</span></div>
-<h1>Message us on <span class="highlight">WhatsApp</span><br>for details &amp; guidance</h1>
-<a class="whatsapp" href="https://wa.me/qr/WIT34NJZ6RZON1" target="_blank" rel="noopener"><span class="wa-icon">☎</span> Message on WhatsApp</a>
-<div class="timer" id="timer">Opening WhatsApp in 5 seconds — or tap above<div class="bar"><i></i></div></div>
-<div class="disclaimer">Task participation is subject to verification. Eligible participants receive rewards according to the applicable task terms and verification requirements. Results may vary; please review the details before proceeding.</div>
-<div class="ads">Ads by AX Marketing · <a class="telegram" href="https://t.me/Axev78" target="_blank" rel="noopener">Telegram</a></div></main>
-<script>let n=5,timer=document.getElementById("timer");let t=setInterval(()=>{n--;timer.firstChild.textContent=n>0?"Opening WhatsApp in "+n+" seconds — or tap above ":"Opening WhatsApp… ";if(n<=0){clearInterval(t);location.href="https://wa.me/qr/WIT34NJZ6RZON1"}},1000)</script></body></html>
+:root{
+ --bg:#f4f7ff;--card:#fff;--ink:#142033;--muted:#687286;--blue:#3869d7;
+ --blue2:#5a5ce8;--cyan:#29c9d9;--green:#21bf61;--line:#e4e9f3;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:linear-gradient(180deg,#f1f5ff 0,#f8fbff 55%,#eef8f8 100%);
+color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{width:min(680px,94%);margin:auto}
+.top{height:72px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 6%;position:relative}
+.brandmark{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px}
+.check{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#5367ef,#3d77d9);display:grid;place-items:center;color:white;font-size:22px}
+.badge{background:#eef1ff;color:#4c50b9;padding:10px 16px;border-radius:22px;font-weight:800;font-size:12px}
+.hero{padding:48px 0 25px;text-align:center}
+.kicker{display:inline-block;padding:9px 15px;border:1px solid #aee9ed;border-radius:24px;background:#efffff;color:#207987;font-weight:850;font-size:12px}
+h1{font-size:clamp(34px,9vw,53px);line-height:1.03;letter-spacing:-2.5px;margin:20px 0 14px}
+.grad{background:linear-gradient(90deg,#356bd9,#5c5de6,#c04dd2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--muted);font-size:16px;line-height:1.6;max-width:570px;margin:auto}
+.visual{margin:30px 0 22px;padding:28px 20px;border-radius:30px;background:linear-gradient(145deg,#eef2ff,#faffff);
+box-shadow:0 20px 45px #8a9fd522;border:1px solid #e3e9f5}
+.phone{width:205px;height:320px;margin:auto;border:12px solid #142033;border-radius:42px;background:#fff;box-shadow:0 18px 35px #33466c30;transform:rotate(-4deg);padding:22px 16px;display:flex;flex-direction:column;justify-content:center;gap:15px}
+.phone .bar{height:13px;border-radius:20px;background:#cbd7fa}.phone .bar.short{width:65%;background:#b9efd2}
+.phone .project{margin:4px 0;padding:16px;border-radius:18px;background:#f1f5ff;text-align:left;font-weight:850;font-size:13px;color:#315fca}
+.phone .project small{display:block;color:#7c879a;font-weight:600;margin-top:5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0 24px}
+.card{background:#fff;border:1px solid #e7ebf3;border-radius:22px;padding:24px 12px;box-shadow:0 10px 30px #63789c12}
+.icon{font-size:25px;margin-bottom:8px}.card strong{display:block;font-size:15px}.card small{display:block;margin-top:7px;color:#7b8494;font-size:11px;line-height:1.4}
+.steps{background:#fff;border:1px solid #e3e8f1;border-radius:26px;padding:22px;margin:15px 0 25px;text-align:left;box-shadow:0 12px 30px #63789c10}
+.steps h2{margin:0 0 16px;font-size:21px}.step{display:flex;gap:13px;margin:14px 0}.num{min-width:30px;height:30px;border-radius:50%;background:#eef2ff;color:#4164d7;display:grid;place-items:center;font-weight:900;font-size:12px}.step b{font-size:14px}.step p{margin:3px 0 0;color:#7a8495;font-size:12px;line-height:1.45}
+.cta{display:block;background:var(--green);color:#062511;text-decoration:none;border-radius:18px;padding:17px;text-align:center;font-size:17px;font-weight:950;box-shadow:0 12px 25px #21bf6133}
+.waicon{display:inline-grid;place-items:center;width:25px;height:25px;background:#fff;border-radius:50%;color:var(--green);margin-right:7px}
+.timer{text-align:center;color:#788397;font-size:11px;margin-top:9px}.line{height:4px;background:#e3e8ef;border-radius:10px;margin-top:7px;overflow:hidden}.line i{display:block;height:100%;background:var(--green);animation:go 5s linear forwards}@keyframes go{to{width:0}}
+.contact{margin:15px 0 0;text-align:center;color:#5e687b;font-size:12px}.contact a{color:#187b4a;font-weight:850;text-decoration:none}
+.disclaimer{text-align:center;color:#8a94a5;font-size:10.5px;line-height:1.55;margin:16px auto;max-width:580px}
+footer{text-align:center;color:#8993a4;font-size:10px;padding:8px 0 30px}
+@media(max-width:480px){.top{height:66px}.badge{padding:9px 12px}.hero{padding-top:38px}.phone{width:185px;height:285px}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="brandmark"><span class="check">✓</span> AX Marketing</div>
+ <div class="badge">Project Program</div>
+</header>
+
+<main class="wrap">
+<section class="hero">
+ <span class="kicker">Project-Based Tasks</span>
+ <h1>Explore <span class="grad">simple projects</span><br>with guided support</h1>
+ <p class="sub">Get access to task-based projects, clear instructions and project guidance. Review the details before you participate.</p>
+
+ <div class="visual">
+  <div class="phone">
+   <div class="bar"></div><div class="bar short"></div>
+   <div class="project">📝 Writing Project<small>Step-by-step task guidance</small></div>
+   <div class="project">📊 Survey Project<small>Simple project workflow</small></div>
+   <div class="bar short"></div>
+  </div>
+ </div>
+
+ <div class="grid">
+  <div class="card"><div class="icon">📋</div><strong>Task-Based Projects</strong><small>Projects with clear task instructions</small></div>
+  <div class="card"><div class="icon">🧩</div><strong>Multiple Categories</strong><small>Different project types may be available</small></div>
+  <div class="card"><div class="icon">💬</div><strong>Guidance &amp; Support</strong><small>Get help with project information</small></div>
+  <div class="card"><div class="icon">🔎</div><strong>Verification</strong><small>Tasks are reviewed as required</small></div>
+ </div>
+
+ <div class="steps">
+  <h2>How the project flow works</h2>
+  <div class="step"><span class="num">1</span><div><b>Review project details</b><p>Check the available project information and requirements.</p></div></div>
+  <div class="step"><span class="num">2</span><div><b>Select an available task</b><p>Choose a project that matches the listed requirements.</p></div></div>
+  <div class="step"><span class="num">3</span><div><b>Complete &amp; submit</b><p>Follow the provided instructions and submit the task for review.</p></div></div>
+  <div class="step"><span class="num">4</span><div><b>Verification</b><p>Submitted tasks are subject to applicable verification requirements.</p></div></div>
+ </div>
+
+ <a class="cta" href="https://wa.me/qr/WIT34NJZ6RZON1" target="_blank" rel="noopener">
+   <span class="waicon">☎</span> Contact us — WhatsApp
+ </a>
+ <div class="timer" id="timer">Opening WhatsApp in 5 seconds — or tap above<div class="line"><i></i></div></div>
+ <div class="contact">WhatsApp: <a href="https://wa.me/916377664823">+91 63776 64823</a></div>
+ <div class="disclaimer">Task availability and eligibility may vary. Submitted tasks are subject to verification and applicable project terms. Any reward, where applicable, is provided only after successful verification according to the relevant task terms. No fixed earnings are promised.</div>
+</section>
+</main>
+<footer>Ads by AX Marketing</footer>
+
+<script>
+let n=5,el=document.getElementById("timer");
+const t=setInterval(()=>{
+ n--;
+ el.firstChild.textContent=n>0?"Opening WhatsApp in "+n+" seconds — or tap above ":"Opening WhatsApp… ";
+ if(n<=0){clearInterval(t);location.href="https://wa.me/qr/WIT34NJZ6RZON1";}
+},1000);
+</script>
+</body>
+</html>
