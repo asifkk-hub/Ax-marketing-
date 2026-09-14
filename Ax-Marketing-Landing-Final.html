@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Ax Marketing</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+body{
+font-family:Arial,Helvetica,sans-serif;color:#fff;
+background:
+radial-gradient(circle at 15% 25%,rgba(0,255,120,.25),transparent 30%),
+radial-gradient(circle at 85% 75%,rgba(0,180,255,.22),transparent 32%),
+#020605;
+display:flex;align-items:center;justify-content:center;
+}
+.page{
+width:92%;max-width:410px;position:relative;
+}
+.people{
+position:absolute;inset:-65px -35px;
+pointer-events:none;opacity:.32;z-index:0;
+}
+.people:before{
+content:"";position:absolute;width:135px;height:190px;left:2px;top:10px;
+border-radius:70px 70px 20px 20px;
+background:linear-gradient(145deg,rgba(0,255,120,.55),rgba(0,100,70,.05));
+filter:blur(3px);transform:rotate(-8deg);
+}
+.people:after{
+content:"";position:absolute;width:155px;height:175px;right:0;bottom:0;
+border-radius:70px 70px 18px 18px;
+background:linear-gradient(145deg,rgba(0,180,255,.5),rgba(0,80,120,.05));
+filter:blur(3px);transform:rotate(8deg);
+}
+.card{
+position:relative;z-index:2;
+padding:17px 15px 12px;
+border:1px solid #19ef78;border-radius:25px;
+background:rgba(3,12,9,.94);
+box-shadow:0 0 35px rgba(0,255,120,.16),inset 0 0 25px rgba(0,255,120,.035);
+}
+.brand{
+display:inline-block;padding:6px 20px;border:1px solid #19ef78;
+border-radius:30px;color:#16f078;font-size:13px;font-weight:800;
+margin-bottom:9px;
+}
+h1{font-size:27px;line-height:1.05;text-align:center;margin:0 0 5px;font-weight:900}
+h1 span{color:#16f078}
+.tag{text-align:center;color:#929c99;font-size:11px;margin-bottom:10px}
+.btn{
+display:flex;align-items:center;gap:9px;text-decoration:none;color:#fff;
+border-radius:13px;font-weight:900;padding:12px 13px;margin:7px auto;
+}
+.tg{background:linear-gradient(135deg,#13aef4,#1679df);font-size:16px;width:100%;box-shadow:0 0 18px rgba(0,150,255,.2)}
+.wa{background:linear-gradient(135deg,#20d86c,#0eaf4d);font-size:12px;width:72%;padding:9px 12px}
+.btn .arr{margin-left:auto;font-size:21px}
+.or{text-align:center;color:#68726f;font-size:9px;margin:5px 0}
+.contact{
+display:flex;align-items:center;gap:9px;text-decoration:none;color:#fff;
+border:1px solid #52605b;border-radius:12px;padding:8px 10px;margin-top:6px;
+background:rgba(255,255,255,.02)
+}
+.contact b{font-size:12px}.contact small{display:block;color:#89938f;font-size:9px;margin-top:2px}
+.contact .arr{margin-left:auto}
+.ad{text-align:center;color:#12ec73;font-size:10px;font-weight:800;margin:7px}
+.activity{
+display:flex;align-items:center;gap:8px;border:1px solid rgba(20,240,115,.55);
+border-radius:12px;padding:7px 8px;background:rgba(0,255,120,.035)
+}
+.avatar{width:31px;height:31px;border-radius:50%;background:#b9ed3b;color:#071008;
+display:grid;place-items:center;font-size:12px;font-weight:900}
+.info{min-width:0}.name{font-size:11px;font-weight:800}.msg{font-size:9px;color:#9da7a4}
+.money{color:#10ed73;font-weight:900}.time{margin-left:auto;color:#78827f;font-size:8px}
+.dots{text-align:center;margin:5px}.dots i{display:inline-block;width:4px;height:4px;border-radius:50%;background:#35403c;margin:0 2px}.dots i.on{background:#10ed73}
+.disclaimer{text-align:center;color:#68716f;font-size:7.5px;line-height:1.3;padding:0 5px}
+.disclaimer b{color:#858f8c}.foot{text-align:center;color:#0edb6b;font-size:7.5px;font-weight:800;margin-top:3px}
+@media(max-height:650px){.card{padding:12px 12px 9px}h1{font-size:23px}.brand{margin-bottom:6px}.btn{padding:9px 11px;margin:5px auto}.contact{padding:6px 8px}.activity{padding:6px 7px}.disclaimer{font-size:6.8px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="people"></div>
+<section class="card">
+<div style="text-align:center"><div class="brand">Ax Marketing</div></div>
+<h1>Join Our <span>Telegram</span> &amp; WhatsApp</h1>
+<div class="tag">Connect with our community and get started</div>
+
+<a class="btn tg" id="tg" href="https://t.me/Axev78?text=HI%2C%20PLEASE%20GUIDE%20ME%20FOR%20THIS%20OPPORTUNITY%20">
+<span>✈️</span><span>Join Telegram</span><span class="arr">›</span>
+</a>
+
+<a class="btn wa" href="https://wa.link/eywapt">
+<span>●</span><span>Join WhatsApp</span><span class="arr">›</span>
+</a>
+
+<div class="or">OR</div>
+
+<a class="contact" href="https://wa.link/eywapt">
+<span style="font-size:18px">💬</span>
+<span><b>Contact Us</b><small>To Start Your Journey With Us</small></span>
+<span class="arr">›</span>
+</a>
+
+<div class="ad">Ad's By Axxif</div>
+
+<div class="activity">
+<div class="avatar" id="avatar">S</div>
+<div class="info">
+<div class="name" id="name">Sameer</div>
+<div class="msg">joined channel, completed task and earned <span class="money" id="money">₹500</span></div>
+</div>
+<div class="time">just now</div>
+</div>
+
+<div class="dots"><i class="on"></i><i></i><i></i></div>
+
+<div class="disclaimer"><b>Disclaimer:</b> Earnings are subject to individual effort and may vary. No income is guaranteed. This page is for informational and advertising purposes only.</div>
+<div class="foot">Learn • Work • Grow Together</div>
+</section>
+</div>
+
+<script>
+const telegram="https://t.me/Axev78?text=HI%2C%20PLEASE%20GUIDE%20ME%20FOR%20THIS%20OPPORTUNITY%20";
+
+const users=[
+["Sameer","S",500],["Rahul","R",400],["Priya","P",600],
+["Aman","A",300],["Sneha","S",550],["Vikram","V",450],
+["Neha","N",350],["Rohit","R",500]
+];
+
+let n=0;
+setInterval(()=>{
+ n=(n+1)%users.length;
+ const u=users[n];
+ document.getElementById("name").textContent=u[0];
+ document.getElementById("avatar").textContent=u[1];
+ document.getElementById("money").textContent="₹"+u[2];
+ document.querySelectorAll(".dots i").forEach((x,i)=>x.classList.toggle("on",i===n%3));
+},3500);
+
+let timer=setTimeout(()=>location.href=telegram,6000);
+document.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>clearTimeout(timer)));
+</script>
+</body>
+</html>
